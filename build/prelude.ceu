@@ -19,11 +19,7 @@ val {{||}} = func (v1, v2) {
 ;; ARITHMETIC
 
 val {{+}} = func (v1, v2) {
-    if (type(v1) /= :number) || (type(v2) /= :number) {
-        error(:error)
-    } else {
         `:number ($v1.Number + $v2.Number)`
-    }
 }
 
 val {{-}} = func (v1, v2) {
